@@ -14,7 +14,49 @@ I AM GOINT TO PUT SOME MORE LINKS TO sTRIPE PAYMENTS HERE
     <button id="checkout-button">Checkout</button>
   </body>
 </html>
+(function() {
+  'use strict';
 
+  var elements = stripe.elements({
+    fonts: [
+      {
+        cssSrc: 'https://fonts.googleapis.com/css?family=Roboto',
+      },
+    ],
+    // Stripe's examples are localized to specific languages, but if
+    // you wish to have Elements automatically detect your user's locale,
+    // use `locale: 'auto'` instead.
+    locale: window.__exampleLocale
+  });
+
+  var card = elements.create('card', {
+    iconStyle: 'solid',
+    style: {
+      base: {
+        iconColor: '#c4f0ff',
+        color: '#fff',
+        fontWeight: 500,
+        fontFamily: 'Roboto, Open Sans, Segoe UI, sans-serif',
+        fontSize: '16px',
+        fontSmoothing: 'antialiased',
+
+        ':-webkit-autofill': {
+          color: '#fce883',
+        },
+        '::placeholder': {
+          color: '#87BBFD',
+        },
+      },
+      invalid: {
+        iconColor: '#FFC7EE',
+        color: '#FFC7EE',
+      },
+    },
+  });
+  card.mount('#example1-card');
+
+  registerElements([card], 'example1');
+})();
 
 You can use the [editor on GitHub](https://github.com/matauranz/matauranz.github.io-/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
