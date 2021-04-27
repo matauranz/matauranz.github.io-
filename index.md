@@ -10,10 +10,9 @@ I AM GOINT TO PUT SOME MORE LINKS TO sTRIPE PAYMENTS HERE
     <title>Buy cool new product</title>
     <script src="https://js.stripe.com/v3/"></script>
   
-  // Set your publishable key: remember to change this to your live publishable key in production
+// Set your publishable key: remember to change this to your live publishable key in production
 // See your keys here: https://dashboard.stripe.com/apikeys
 var stripe = Stripe(
-
 'pk_test_51IikpYCAB1IEzkyGzXFNpjtWEw1Zet4dbptTDZfO9Sk6XgU8pMVU3TAbUjsYMIiNG9iuL2DkUNUn94sgfYK41bY900kOxyju8i'
 );
 var elements = stripe.elements();
