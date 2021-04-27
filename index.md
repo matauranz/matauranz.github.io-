@@ -3,6 +3,8 @@
 
 ....HERE IS MY OWN CONTENT SOME MORE SOME MORE
 
+I AM GOINT TO PUT SOME MORE LINKS TO sTRIPE PAYMENTS HERE
+
 You can use the [editor on GitHub](https://github.com/matauranz/matauranz.github.io-/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
